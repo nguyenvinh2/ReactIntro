@@ -7,7 +7,7 @@ export class Board extends Component {
     super(props);
     this.state = {
       squares: Array(9).fill(null),
-      xIsNext: true;
+      xIsNext: true,
 
     };
   }
@@ -25,7 +25,7 @@ export class Board extends Component {
     return (
       <Square
           value={this.state.squares[i]}
-          onClick={() => this.handeClick(i)}
+          onClick={() => this.handleClick(i)}
       />
     );
   }
